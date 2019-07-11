@@ -1,0 +1,2655 @@
+[
+    {
+        "id": "2fa89d18.be0c62",
+        "type": "tab",
+        "label": "Config",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "daabcdfa.c18f3",
+        "type": "tab",
+        "label": "Tagesübersicht",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "b17faabe.13721",
+        "type": "tab",
+        "label": "Wochenübersicht",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "55777aeb.409dac",
+        "type": "tab",
+        "label": "Monatsübersicht",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "83df7998.8bd9f",
+        "type": "tab",
+        "label": "CSV 15 Min One week",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "994468de.d7a8a8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Tages-Dashboard",
+        "icon": "dashboard"
+    },
+    {
+        "id": "e5987104.3967b8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Aktuell",
+        "tab": "994468de.d7a8a8",
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "49b441c5.12e038",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "Helvetica Neue",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "Helvetica Neue",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "Helvetica Neue"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                }
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "524790d5.d6c6d8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Tagesverlauf",
+        "tab": "994468de.d7a8a8",
+        "disp": true,
+        "width": "20"
+    },
+    {
+        "id": "1632c13d.8ac087",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Wochen-Dashboard",
+        "icon": "dashboard"
+    },
+    {
+        "id": "987b058f.558768",
+        "type": "ui_group",
+        "z": "",
+        "name": "Wochenverlauf",
+        "tab": "1632c13d.8ac087",
+        "order": 2,
+        "disp": true,
+        "width": "20"
+    },
+    {
+        "id": "681ea79e.0705c8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Wochenwerte",
+        "tab": "1632c13d.8ac087",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "23fc3be.e3cffc4",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Monatsübersicht",
+        "icon": "dashboard"
+    },
+    {
+        "id": "7bfa3904.7a3c8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Jahresübersicht",
+        "tab": "23fc3be.e3cffc4",
+        "order": 2,
+        "disp": true,
+        "width": "20"
+    },
+    {
+        "id": "399d2c00.fc7d9c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Monatswerte",
+        "tab": "23fc3be.e3cffc4",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "16c06191.4ff266",
+        "type": "file in",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "filename": "/home/root/e_meter_0.txt",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "x": 530,
+        "y": 160,
+        "wires": [
+            [
+                "c98158a3.8fbf"
+            ]
+        ]
+    },
+    {
+        "id": "14248c60.26c3ac",
+        "type": "inject",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 280,
+        "y": 160,
+        "wires": [
+            [
+                "16c06191.4ff266"
+            ]
+        ]
+    },
+    {
+        "id": "dea2d809.9cd588",
+        "type": "inject",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 150,
+        "y": 40,
+        "wires": [
+            [
+                "258cb364.68680c",
+                "e52b14b6.8acda"
+            ]
+        ]
+    },
+    {
+        "id": "f77b51f7.bb8e4",
+        "type": "debug",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 690,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "ab23aa4d.a5432",
+        "type": "function",
+        "z": "2fa89d18.be0c62",
+        "name": "show last_meter_0",
+        "func": "var last_meter_0 = global.get('last_meter_0');\nmsg.payload = last_meter_0;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 400,
+        "y": 320,
+        "wires": [
+            [
+                "f77b51f7.bb8e4"
+            ]
+        ]
+    },
+    {
+        "id": "eaaf000c.19ad9",
+        "type": "inject",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 160,
+        "y": 320,
+        "wires": [
+            [
+                "ab23aa4d.a5432"
+            ]
+        ]
+    },
+    {
+        "id": "c98158a3.8fbf",
+        "type": "debug",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 770,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d21ec05.dffd54",
+        "type": "file",
+        "z": "2fa89d18.be0c62",
+        "name": "set tarif",
+        "filename": "/dev/shm/tarif_state.txt",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "x": 640,
+        "y": 400,
+        "wires": [
+            [
+                "54082270.3bd12c"
+            ]
+        ]
+    },
+    {
+        "id": "3db29452.917fe4",
+        "type": "inject",
+        "z": "2fa89d18.be0c62",
+        "name": "Activate night tarif",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "00 22 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 190,
+        "y": 380,
+        "wires": [
+            [
+                "ca27ee1.475609"
+            ]
+        ]
+    },
+    {
+        "id": "9abd02c5.b3d64",
+        "type": "file in",
+        "z": "2fa89d18.be0c62",
+        "name": "read tarif",
+        "filename": "/dev/shm/tarif_state.txt",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "x": 700,
+        "y": 560,
+        "wires": [
+            [
+                "18cb536f.0dbb65"
+            ]
+        ]
+    },
+    {
+        "id": "a338fc1b.d95ed",
+        "type": "inject",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 460,
+        "y": 560,
+        "wires": [
+            [
+                "9abd02c5.b3d64",
+                "a06e350c.19ec8"
+            ]
+        ]
+    },
+    {
+        "id": "18cb536f.0dbb65",
+        "type": "debug",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 920,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "87f94b91.8eafd8",
+        "type": "inject",
+        "z": "2fa89d18.be0c62",
+        "name": "Activate day tarif",
+        "topic": "",
+        "payload": "0",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "00 06 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 190,
+        "y": 440,
+        "wires": [
+            [
+                "ca27ee1.475609"
+            ]
+        ]
+    },
+    {
+        "id": "eb48edf6.00da7",
+        "type": "file in",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "filename": "/home/root/e_meter_1.txt",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "x": 530,
+        "y": 220,
+        "wires": [
+            [
+                "ffef6678.cfcd4"
+            ]
+        ]
+    },
+    {
+        "id": "f2bfa351.9100e",
+        "type": "inject",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 280,
+        "y": 220,
+        "wires": [
+            [
+                "eb48edf6.00da7"
+            ]
+        ]
+    },
+    {
+        "id": "ffef6678.cfcd4",
+        "type": "debug",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 780,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "a06e350c.19ec8",
+        "type": "debug",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 760,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "3a6b9e36.c5805a",
+        "type": "ui_chart",
+        "z": "daabcdfa.c18f3",
+        "name": "",
+        "group": "e5987104.3967b8",
+        "order": 0,
+        "width": "6",
+        "height": "5",
+        "label": "Leistung [kW]",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "15",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "x": 980,
+        "y": 540,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ca27ee1.475609",
+        "type": "function",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "func": "global.set('tarif', msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 450,
+        "y": 400,
+        "wires": [
+            [
+                "d21ec05.dffd54"
+            ]
+        ]
+    },
+    {
+        "id": "54082270.3bd12c",
+        "type": "debug",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 840,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "349bdca5.ae6674",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "Active Power",
+        "func": "var tarif = global.get('tarif');\n\nmsg.payload =   '\"SELECT * FROM ' +\n                'meter_' + tarif + ' ORDER BY timestamp DESC ' +\n                'LIMIT 2\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 310,
+        "y": 540,
+        "wires": [
+            [
+                "85bb06a1.05fae8"
+            ]
+        ]
+    },
+    {
+        "id": "a74db70c.a15a08",
+        "type": "inject",
+        "z": "daabcdfa.c18f3",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 540,
+        "wires": [
+            [
+                "349bdca5.ae6674"
+            ]
+        ]
+    },
+    {
+        "id": "85bb06a1.05fae8",
+        "type": "exec",
+        "z": "daabcdfa.c18f3",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 540,
+        "y": 540,
+        "wires": [
+            [
+                "5dc0eb39.1f46d4"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "5dc0eb39.1f46d4",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "",
+        "func": "var words = msg.payload.split(/\\||\\n+/);\nvar imp_ratio = global.get('imp_per_kwh');\nvar outputMsgs = [];\n\nvar dt = words[0] - words[2];\n\n//var power = (dy * 3600) / (dt * imp_ratio);\n\nvar p = (words[3] * 3600) / (dt * imp_ratio);\n\n/*\nfor (var w in words) {\n    outputMsgs.push({payload:words[w]});\n}\nreturn [ outputMsgs ];\n*/\nmsg.payload = p;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 770,
+        "y": 540,
+        "wires": [
+            [
+                "3a6b9e36.c5805a"
+            ]
+        ]
+    },
+    {
+        "id": "258cb364.68680c",
+        "type": "file in",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "filename": "/dev/shm/tarif_state.txt",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "x": 390,
+        "y": 40,
+        "wires": [
+            [
+                "92f5fabf.954e78"
+            ]
+        ]
+    },
+    {
+        "id": "92f5fabf.954e78",
+        "type": "function",
+        "z": "2fa89d18.be0c62",
+        "name": "Set global tarif",
+        "func": "var tarif = msg.payload[0];\nglobal.set('tarif', tarif);\nmsg.payload = tarif;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 640,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ad0452d.3a5c58",
+        "type": "exec",
+        "z": "daabcdfa.c18f3",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 980,
+        "y": 40,
+        "wires": [
+            [
+                "88317c69.4edcd8"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8c972f31.6f00b8",
+        "type": "ui_chart",
+        "z": "daabcdfa.c18f3",
+        "name": "",
+        "group": "524790d5.d6c6d8",
+        "order": 0,
+        "width": "20",
+        "height": "11",
+        "label": "Tagesübersicht [€]",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "x": 1450,
+        "y": 20,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "88317c69.4edcd8",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "parse float -> €",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1180,
+        "y": 40,
+        "wires": [
+            [
+                "8c972f31.6f00b8"
+            ]
+        ]
+    },
+    {
+        "id": "ba629e1b.d5a41",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "Werte meter_0 + meter_1",
+        "func": "var price_0 = global.get('price_0');\nvar price_1 = global.get('price_1');\nvar imp_ratio = global.get('imp_per_kwh');\n\nvar factor_0 = price_0 / imp_ratio;\nvar factor_1 = price_1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(total) FROM (' +\n                ' SELECT SUM(value * ' + factor_0 + ' ) total FROM meter_0 WHERE' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' UNION' +\n                ' SELECT SUM(value * ' + factor_1 + ' ) total FROM meter_1 WHERE ' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' );\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 670,
+        "y": 40,
+        "wires": [
+            [
+                "9ad0452d.3a5c58"
+            ]
+        ]
+    },
+    {
+        "id": "6ca921c0.d801d",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "last hour intervals",
+        "func": "var ts = msg.payload;\n\nvar d = new Date(); // Localtime\nvar s = d.getSeconds();\nvar m = d.getMinutes();\nvar h = d.getHours();\nvar msgs = []\n\n/* GMT to LOCAL */\n\n//h -= 1;\n\n\nts /= 1000; // cut off milliseconds from ts\nts = Math.floor(ts); //cur off decimal places\nts -= (3600 * h); // minus the actual hours\nts -= (60 * m);   // minus the actual minutes\nts -= s;         // minus the actual seconds\n\n\nfor(var i = 0; i < 24; i = i + 1){\n    var start_hour = i;\n    start_hour = start_hour.toString();\n    start_hour = start_hour.length >= 2 ? start_hour : new Array(2 - start_hour.length + 1).join('0') + start_hour;\n    \n    var end_hour = (i + 1).toString();\n    end_hour = end_hour.length >= 2 ? end_hour : new Array(2 - end_hour.length + 1).join('0') + end_hour;\n    \n    var range = start_hour + ':00 - ' + end_hour + ':00';\n    \n    msgs.push({topic: range, payload: { start: ts, end: ts + 3600 }});\n    ts += 3600;\n\n}\nreturn [msgs];\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 40,
+        "wires": [
+            [
+                "ba629e1b.d5a41"
+            ]
+        ]
+    },
+    {
+        "id": "28937388.81f834",
+        "type": "inject",
+        "z": "daabcdfa.c18f3",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "900",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 40,
+        "wires": [
+            [
+                "6ca921c0.d801d"
+            ]
+        ]
+    },
+    {
+        "id": "e52b14b6.8acda",
+        "type": "function",
+        "z": "2fa89d18.be0c62",
+        "name": "Set Configuration",
+        "func": "global.set('price_0', 0.26); //[€/kWh]\nglobal.set('price_1', 0.17); // [€/kWh]\nglobal.set('imp_per_kwh', 1000);\nglobal.set('costs', false);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 480,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "30f7bcf5.e372ac",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "todays consumption",
+        "func": "var ts_now = msg.payload;\nvar ts_0 = msg.payload;\n\nvar d = new Date(); // localtime\n\nvar s = d.getSeconds();\nvar m = d.getMinutes();\nvar h = d.getHours();\n\n\n\nts_now /= 1000; // cut off milliseconds from ts\nts_now = Math.floor(ts_now); //cur off decimal places\nts_0 /= 1000; // cut off milliseconds from ts\nts_0 = Math.floor(ts_0); //cur off decimal places\nts_0 -= (3600 * h); // minus the actual hours\nts_0 -= (60 * m);   // minus the actual minutes\nts_0 -= s;         // minus the actual seconds\n\nmsg = {payload : { start : ts_0, end : ts_now }};\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 220,
+        "wires": [
+            [
+                "a9ccc673.c668e8",
+                "36a33bc0.7a1cb4",
+                "9a3243e9.bd461",
+                "14574e98.d0f111",
+                "8d6fb80.77ecd48",
+                "fb333c1e.160ab"
+            ]
+        ]
+    },
+    {
+        "id": "a9ccc673.c668e8",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "Kosten meter_0 + meter_1",
+        "func": "var price_0 = global.get('price_0');\nvar price_1 = global.get('price_1');\nvar imp_ratio = global.get('imp_per_kwh');\n\nvar factor_0 = price_0 / imp_ratio;\nvar factor_1 = price_1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(total) FROM (' +\n                ' SELECT SUM(value * ' + factor_0 + ' ) total FROM meter_0 WHERE' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' UNION' +\n                ' SELECT SUM(value * ' + factor_1 + ' ) total FROM meter_1 WHERE ' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' );\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 680,
+        "y": 100,
+        "wires": [
+            [
+                "287526f6.095cf2"
+            ]
+        ]
+    },
+    {
+        "id": "857e9b24.0e384",
+        "type": "inject",
+        "z": "daabcdfa.c18f3",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "300",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "30f7bcf5.e372ac"
+            ]
+        ]
+    },
+    {
+        "id": "287526f6.095cf2",
+        "type": "exec",
+        "z": "daabcdfa.c18f3",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 940,
+        "y": 100,
+        "wires": [
+            [
+                "84706da9.613cf"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "84706da9.613cf",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "parse float -> €",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1160,
+        "y": 100,
+        "wires": [
+            [
+                "8506ec2c.55856"
+            ]
+        ]
+    },
+    {
+        "id": "8506ec2c.55856",
+        "type": "ui_text",
+        "z": "daabcdfa.c18f3",
+        "group": "e5987104.3967b8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Kosten heute:",
+        "format": "{{msg.payload}} €",
+        "layout": "row-spread",
+        "x": 1420,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "36a33bc0.7a1cb4",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "Verbrauch meter_0 + meter_1",
+        "func": "var imp_ratio = global.get('imp_per_kwh');\n\nvar factor = 1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(total) FROM (' +\n                ' SELECT SUM(value * ' + factor + ' ) total FROM meter_0 WHERE' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' UNION' +\n                ' SELECT SUM(value * ' + factor + ' ) total FROM meter_1 WHERE ' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' );\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 670,
+        "y": 160,
+        "wires": [
+            [
+                "1ae30175.e254ff"
+            ]
+        ]
+    },
+    {
+        "id": "1ae30175.e254ff",
+        "type": "exec",
+        "z": "daabcdfa.c18f3",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 940,
+        "y": 180,
+        "wires": [
+            [
+                "3d4aac2d.8e51bc"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3d4aac2d.8e51bc",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "parse float -> kWh",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1210,
+        "y": 160,
+        "wires": [
+            [
+                "814f8268.5c74e"
+            ]
+        ]
+    },
+    {
+        "id": "814f8268.5c74e",
+        "type": "ui_text",
+        "z": "daabcdfa.c18f3",
+        "group": "e5987104.3967b8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Verbrauch heute:",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-spread",
+        "x": 1430,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "9a3243e9.bd461",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "Verbrauch meter_0  ",
+        "func": "var imp_ratio = global.get('imp_per_kwh');\n\nvar factor = 1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(value * ' + factor + ' ) FROM ' +\n                'meter_0 WHERE timestamp ' +\n                'BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' ;\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 690,
+        "y": 260,
+        "wires": [
+            [
+                "5597c1b6.669268"
+            ]
+        ]
+    },
+    {
+        "id": "5597c1b6.669268",
+        "type": "exec",
+        "z": "daabcdfa.c18f3",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 940,
+        "y": 260,
+        "wires": [
+            [
+                "f7ef8f90.d2f698"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "13b7c494.23fe23",
+        "type": "ui_text",
+        "z": "daabcdfa.c18f3",
+        "group": "e5987104.3967b8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Davon im Tagtarif:",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-spread",
+        "x": 1410,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "f7ef8f90.d2f698",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "parse float -> kWh",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1170,
+        "y": 240,
+        "wires": [
+            [
+                "13b7c494.23fe23"
+            ]
+        ]
+    },
+    {
+        "id": "14574e98.d0f111",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "Verbrauch meter_1",
+        "func": "var imp_ratio = global.get('imp_per_kwh');\n\nvar factor = 1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(value * ' + factor + ' ) FROM ' +\n                'meter_1 WHERE timestamp ' +\n                'BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' ;\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 690,
+        "y": 320,
+        "wires": [
+            [
+                "f5412a56.bb5408"
+            ]
+        ]
+    },
+    {
+        "id": "f5412a56.bb5408",
+        "type": "exec",
+        "z": "daabcdfa.c18f3",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 940,
+        "y": 320,
+        "wires": [
+            [
+                "f3a0e311.f6e3"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b46fddb6.fff3f8",
+        "type": "ui_text",
+        "z": "daabcdfa.c18f3",
+        "group": "e5987104.3967b8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Davon im Nachtarif:",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-spread",
+        "x": 1420,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "f3a0e311.f6e3",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "parse float -> kWh",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1170,
+        "y": 300,
+        "wires": [
+            [
+                "b46fddb6.fff3f8"
+            ]
+        ]
+    },
+    {
+        "id": "c38ee1c3.336948",
+        "type": "exec",
+        "z": "b17faabe.13721",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 1020,
+        "y": 60,
+        "wires": [
+            [
+                "9e2ba93d.17f368"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9e2ba93d.17f368",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "parse float -> €",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1220,
+        "y": 60,
+        "wires": [
+            [
+                "5a54a4d6.bdeeec"
+            ]
+        ]
+    },
+    {
+        "id": "eaee3826.6fc598",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "Werte meter_0 + meter_1",
+        "func": "var price_0 = global.get('price_0');\nvar price_1 = global.get('price_1');\nvar imp_ratio = global.get('imp_per_kwh');\n\nvar factor_0 = price_0 / imp_ratio;\nvar factor_1 = price_1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(total) FROM (' +\n                ' SELECT SUM(value * ' + factor_0 + ' ) total FROM meter_0 WHERE' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' UNION' +\n                ' SELECT SUM(value * ' + factor_1 + ' ) total FROM meter_1 WHERE ' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' );\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 710,
+        "y": 60,
+        "wires": [
+            [
+                "c38ee1c3.336948"
+            ]
+        ]
+    },
+    {
+        "id": "abd45753.a6442",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "last day intervals",
+        "func": "var ts = msg.payload;\nvar d = new Date(); // Localtime\nvar s = d.getSeconds();\nvar m = d.getMinutes();\nvar h = d.getHours();\nvar day = d.getDay();\n\nvar msgs = [];\nvar weekdays = ['Mon', 'Die', 'Mit', 'Do', 'Fr', 'Sa', 'So'];\n\n\n/* because sunday = 0 */\nif (day == 0){\n    day = 6;\n} else {\n    day -= 1;\n}\n\nts /= 1000; // cut off milliseconds from ts\nts = Math.floor(ts); //cur off decimal places\nts -= (86400 * day); // minus the actual days\nts -= (3600 * h); // minus the actual hours\nts -= (60 * m);   // minus the actual minutes\nts -= s;         // minus the actual seconds\n\n\nfor(var i = 0; i < 6; i = i + 1){\n    var range = weekdays[i];\n    msgs.push({topic: range, payload: { start: ts, end: ts + 86400 }});\n    ts += 86400;\n}\nreturn [msgs];\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390,
+        "y": 60,
+        "wires": [
+            [
+                "eaee3826.6fc598"
+            ]
+        ]
+    },
+    {
+        "id": "958b5f58.1ba9e",
+        "type": "inject",
+        "z": "b17faabe.13721",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "3600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 170,
+        "y": 60,
+        "wires": [
+            [
+                "abd45753.a6442"
+            ]
+        ]
+    },
+    {
+        "id": "8d6fb80.77ecd48",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "Kosten meter_0  ",
+        "func": "var price_0 = global.get('price_0');\nvar imp_ratio = global.get('imp_per_kwh');\n\nvar factor = price_0 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(value * ' + factor + ' ) FROM ' +\n                'meter_0 WHERE timestamp ' +\n                'BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' ;\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 700,
+        "y": 400,
+        "wires": [
+            [
+                "8c6a9ed9.19a658"
+            ]
+        ]
+    },
+    {
+        "id": "8c6a9ed9.19a658",
+        "type": "exec",
+        "z": "daabcdfa.c18f3",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 960,
+        "y": 400,
+        "wires": [
+            [
+                "bf7cf28a.969ce"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c1cc38a3.c414c8",
+        "type": "ui_text",
+        "z": "daabcdfa.c18f3",
+        "group": "e5987104.3967b8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Kosten Tagtarif:",
+        "format": "{{msg.payload}} €",
+        "layout": "row-spread",
+        "x": 1440,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "bf7cf28a.969ce",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "parse float -> €",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1200,
+        "y": 400,
+        "wires": [
+            [
+                "c1cc38a3.c414c8"
+            ]
+        ]
+    },
+    {
+        "id": "fb333c1e.160ab",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "Kosten meter_1  ",
+        "func": "var price_1 = global.get('price_1');\nvar imp_ratio = global.get('imp_per_kwh');\n\nvar factor = price_1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(value * ' + factor + ' ) FROM ' +\n                'meter_1 WHERE timestamp ' +\n                'BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' ;\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 720,
+        "y": 460,
+        "wires": [
+            [
+                "e786ae7a.883c3"
+            ]
+        ]
+    },
+    {
+        "id": "e786ae7a.883c3",
+        "type": "exec",
+        "z": "daabcdfa.c18f3",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 980,
+        "y": 460,
+        "wires": [
+            [
+                "aeb513dd.89522"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d1721605.1d418",
+        "type": "ui_text",
+        "z": "daabcdfa.c18f3",
+        "group": "e5987104.3967b8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Kosten Nachttarif:",
+        "format": "{{msg.payload}} €",
+        "layout": "row-spread",
+        "x": 1470,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "aeb513dd.89522",
+        "type": "function",
+        "z": "daabcdfa.c18f3",
+        "name": "parse float -> €",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1220,
+        "y": 460,
+        "wires": [
+            [
+                "d1721605.1d418"
+            ]
+        ]
+    },
+    {
+        "id": "5a54a4d6.bdeeec",
+        "type": "ui_chart",
+        "z": "b17faabe.13721",
+        "name": "",
+        "group": "987b058f.558768",
+        "order": 0,
+        "width": "20",
+        "height": "11",
+        "label": "Wochenübersicht [€]",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "x": 1480,
+        "y": 60,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "45936e9c.c9bac8",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "this weeks consumption",
+        "func": "var ts_now = msg.payload;\nvar ts_0 = msg.payload;\n\nvar d = new Date(); // localtime\nvar s = d.getSeconds();\nvar m = d.getMinutes();\nvar h = d.getHours();\nvar day = d.getDay();\n\n/* because sunday = 0 */\nif (day === 0){\n    day = 6;\n} else {\n    day -= 1;\n}\n\nts_now /= 1000; // cut off milliseconds from ts\nts_now = Math.floor(ts_now); //cur off decimal places\nts_0 /= 1000; // cut off milliseconds from ts\nts_0 = Math.floor(ts_0); //cur off decimal places\nts_0 -= (86400 * day); // minus the actual days\nts_0 -= (3600 * h); // minus the actual hours\nts_0 -= (60 * m);   // minus the actual minutes\nts_0 -= s;         // minus the actual seconds\n\nmsg = {payload : { start : ts_0, end : ts_now }};\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 260,
+        "wires": [
+            [
+                "82ffc185.94fa1",
+                "13560b2d.a7378d",
+                "d54fd279.c9be4",
+                "1944f619.7d5e9a",
+                "3c7fb02c.eeaff",
+                "413146f2.e411f"
+            ]
+        ]
+    },
+    {
+        "id": "82ffc185.94fa1",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "Kosten meter_0 + meter_1",
+        "func": "var price_0 = global.get('price_0');\nvar price_1 = global.get('price_1');\nvar imp_ratio = global.get('imp_per_kwh');\n\nvar factor_0 = price_0 / imp_ratio;\nvar factor_1 = price_1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(total) FROM (' +\n                ' SELECT SUM(value * ' + factor_0 + ' ) total FROM meter_0 WHERE' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' UNION' +\n                ' SELECT SUM(value * ' + factor_1 + ' ) total FROM meter_1 WHERE ' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' );\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 680,
+        "y": 140,
+        "wires": [
+            [
+                "ae250674.2f20d8"
+            ]
+        ]
+    },
+    {
+        "id": "ec41cbe8.3199b8",
+        "type": "inject",
+        "z": "b17faabe.13721",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "3600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 150,
+        "y": 260,
+        "wires": [
+            [
+                "45936e9c.c9bac8"
+            ]
+        ]
+    },
+    {
+        "id": "ae250674.2f20d8",
+        "type": "exec",
+        "z": "b17faabe.13721",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 940,
+        "y": 140,
+        "wires": [
+            [
+                "b0de90cb.547bc8"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b0de90cb.547bc8",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "parse float -> €",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1160,
+        "y": 140,
+        "wires": [
+            [
+                "286951a9.c4ee96"
+            ]
+        ]
+    },
+    {
+        "id": "286951a9.c4ee96",
+        "type": "ui_text",
+        "z": "b17faabe.13721",
+        "group": "681ea79e.0705c8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Kosten Woche:",
+        "format": "{{msg.payload}} €",
+        "layout": "row-spread",
+        "x": 1420,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "13560b2d.a7378d",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "Verbrauch meter_0 + meter_1",
+        "func": "var imp_ratio = global.get('imp_per_kwh');\n\nvar factor = 1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(total) FROM (' +\n                ' SELECT SUM(value * ' + factor + ' ) total FROM meter_0 WHERE' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' UNION' +\n                ' SELECT SUM(value * ' + factor + ' ) total FROM meter_1 WHERE ' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' );\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 670,
+        "y": 200,
+        "wires": [
+            [
+                "1f12a092.16ed4f"
+            ]
+        ]
+    },
+    {
+        "id": "1f12a092.16ed4f",
+        "type": "exec",
+        "z": "b17faabe.13721",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 940,
+        "y": 220,
+        "wires": [
+            [
+                "7656ee25.28c87"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "7656ee25.28c87",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "parse float -> kWh",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1210,
+        "y": 200,
+        "wires": [
+            [
+                "21f5e0be.0ca798"
+            ]
+        ]
+    },
+    {
+        "id": "21f5e0be.0ca798",
+        "type": "ui_text",
+        "z": "b17faabe.13721",
+        "group": "681ea79e.0705c8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Verbrauch Woche:",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-spread",
+        "x": 1430,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "d54fd279.c9be4",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "Verbrauch meter_0  ",
+        "func": "var imp_ratio = global.get('imp_per_kwh');\n\nvar factor = 1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(value * ' + factor + ' ) FROM ' +\n                'meter_0 WHERE timestamp ' +\n                'BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' ;\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 690,
+        "y": 300,
+        "wires": [
+            [
+                "d4f45401.283188"
+            ]
+        ]
+    },
+    {
+        "id": "d4f45401.283188",
+        "type": "exec",
+        "z": "b17faabe.13721",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 940,
+        "y": 300,
+        "wires": [
+            [
+                "17d2f2cf.8ac2b5"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ebf9338a.10dd78",
+        "type": "ui_text",
+        "z": "b17faabe.13721",
+        "group": "681ea79e.0705c8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Davon im Tagtarif:",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-spread",
+        "x": 1410,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "17d2f2cf.8ac2b5",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "parse float -> kWh",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1170,
+        "y": 280,
+        "wires": [
+            [
+                "ebf9338a.10dd78"
+            ]
+        ]
+    },
+    {
+        "id": "1944f619.7d5e9a",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "Verbrauch meter_1",
+        "func": "var imp_ratio = global.get('imp_per_kwh');\n\nvar factor = 1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(value * ' + factor + ' ) FROM ' +\n                'meter_1 WHERE timestamp ' +\n                'BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' ;\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 690,
+        "y": 360,
+        "wires": [
+            [
+                "8c147da9.6dbd3"
+            ]
+        ]
+    },
+    {
+        "id": "8c147da9.6dbd3",
+        "type": "exec",
+        "z": "b17faabe.13721",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 940,
+        "y": 360,
+        "wires": [
+            [
+                "5f074846.20717"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3fc5104a.dc01f8",
+        "type": "ui_text",
+        "z": "b17faabe.13721",
+        "group": "681ea79e.0705c8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Davon im Nachtarif:",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-spread",
+        "x": 1420,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "5f074846.20717",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "parse float -> kWh",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1170,
+        "y": 340,
+        "wires": [
+            [
+                "3fc5104a.dc01f8"
+            ]
+        ]
+    },
+    {
+        "id": "3c7fb02c.eeaff",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "Kosten meter_0  ",
+        "func": "var price_0 = global.get('price_0');\nvar imp_ratio = global.get('imp_per_kwh');\n\nvar factor = price_0 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(value * ' + factor + ' ) FROM ' +\n                'meter_0 WHERE timestamp ' +\n                'BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' ;\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 700,
+        "y": 440,
+        "wires": [
+            [
+                "c0f12fe0.c8d01"
+            ]
+        ]
+    },
+    {
+        "id": "c0f12fe0.c8d01",
+        "type": "exec",
+        "z": "b17faabe.13721",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 960,
+        "y": 440,
+        "wires": [
+            [
+                "99b8bda7.c3f61"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6a068bdf.b4e8f4",
+        "type": "ui_text",
+        "z": "b17faabe.13721",
+        "group": "681ea79e.0705c8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Kosten Tagtarif:",
+        "format": "{{msg.payload}} €",
+        "layout": "row-spread",
+        "x": 1440,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "99b8bda7.c3f61",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "parse float -> €",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1200,
+        "y": 440,
+        "wires": [
+            [
+                "6a068bdf.b4e8f4"
+            ]
+        ]
+    },
+    {
+        "id": "413146f2.e411f",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "Kosten meter_1  ",
+        "func": "var price_1 = global.get('price_1');\nvar imp_ratio = global.get('imp_per_kwh');\n\nvar factor = price_1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(value * ' + factor + ' ) FROM ' +\n                'meter_1 WHERE timestamp ' +\n                'BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' ;\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 720,
+        "y": 500,
+        "wires": [
+            [
+                "508a705c.641358"
+            ]
+        ]
+    },
+    {
+        "id": "508a705c.641358",
+        "type": "exec",
+        "z": "b17faabe.13721",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 980,
+        "y": 500,
+        "wires": [
+            [
+                "3ab87a98.c4708e"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "98048ed2.ab4a48",
+        "type": "ui_text",
+        "z": "b17faabe.13721",
+        "group": "681ea79e.0705c8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Kosten Nachttarif:",
+        "format": "{{msg.payload}} €",
+        "layout": "row-spread",
+        "x": 1470,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "3ab87a98.c4708e",
+        "type": "function",
+        "z": "b17faabe.13721",
+        "name": "parse float -> €",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1220,
+        "y": 500,
+        "wires": [
+            [
+                "98048ed2.ab4a48"
+            ]
+        ]
+    },
+    {
+        "id": "181a7e70.a78522",
+        "type": "inject",
+        "z": "2fa89d18.be0c62",
+        "name": "Select meter_0",
+        "topic": "",
+        "payload": "0",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 880,
+        "y": 80,
+        "wires": [
+            [
+                "6eade35a.4dd1cc"
+            ]
+        ]
+    },
+    {
+        "id": "4054345d.cdf884",
+        "type": "inject",
+        "z": "2fa89d18.be0c62",
+        "name": "Select meter_1",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 880,
+        "y": 120,
+        "wires": [
+            [
+                "6eade35a.4dd1cc"
+            ]
+        ]
+    },
+    {
+        "id": "6eade35a.4dd1cc",
+        "type": "function",
+        "z": "2fa89d18.be0c62",
+        "name": "",
+        "func": "global.set('select_meter', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1180,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd5035b4.fa8548",
+        "type": "exec",
+        "z": "55777aeb.409dac",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 940,
+        "y": 160,
+        "wires": [
+            [
+                "fa2e57c5.0fd4d"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "fa2e57c5.0fd4d",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "parse float -> €",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1140,
+        "y": 160,
+        "wires": [
+            [
+                "9b6048a9.3de88"
+            ]
+        ]
+    },
+    {
+        "id": "4bb69e31.66269",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "Werte meter_0 + meter_1",
+        "func": "var price_0 = global.get('price_0');\nvar price_1 = global.get('price_1');\nvar imp_ratio = global.get('imp_per_kwh');\n\nvar factor_0 = price_0 / imp_ratio;\nvar factor_1 = price_1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(total) FROM (' +\n                ' SELECT SUM(value * ' + factor_0 + ' ) total FROM meter_0 WHERE' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' UNION' +\n                ' SELECT SUM(value * ' + factor_1 + ' ) total FROM meter_1 WHERE ' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' );\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 630,
+        "y": 160,
+        "wires": [
+            [
+                "cd5035b4.fa8548"
+            ]
+        ]
+    },
+    {
+        "id": "464186d4.e28bd8",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "last week intervals",
+        "func": "\n\nvar ts = msg.payload;\nvar d = new Date(); // Localtime\nvar s = d.getSeconds();\nvar m = d.getMinutes();\nvar h = d.getHours();\nvar day = d.getDay();\nvar day_of_month = d.getDate();\nvar kw = d.getWeek();\nvar kw_static = d.getWeek();\n\n\nvar topic = '';\nvar msgs = [];\nvar months = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'];\n\n//end_hour = end_hour.length >= 2 ? end_hour : new Array(2 - end_hour.length + 1).join('0') + end_hour;\n\n/* because sunday = 0 */\n/*\nif (day === 0){\n    day = 6;\n} else {\n    day -= 1;\n}\n*/\n\nts /= 1000; // cut off milliseconds from ts\nts = Math.floor(ts); //cur off decimal places\n//ts -= ((kw_static -1) * 604800); // go back 8 calendar weeks\n//ts -= (86400 * day); // minus the actual days\nts -= ((day_of_month -1) * 604800); // go back to beginn of month\nts -= (3600 * h); // minus the actual hours\nts -= (60 * m);   // minus the actual minutes\nts -= s;         // minus the actual seconds\nkw -= 7;    // go back 7 calendar weeks\n/*\nif (kw < 1){\n    topic = 52 + kw;\n} else {\n    topic = kw;\n}\n*/\n\nfor(var i = 0; i < 12; i = i + 1){\n    \n    var start = new Date(d.getFullYear(), i, 1); // Beginn des Jahres\n    var ts_start = start.getTime();\n    ts_start /= 1000; // cut off milliseconds from ts\n    ts_start = Math.floor(ts_start); //cur off decimal places\n    if (i > 11){\n        i = 0;\n    }\n    var end = new Date(d.getFullYear(), (i+1), 1); // Beginn des Jahres\n    var ts_end = end.getTime();\n    ts_end /= 1000; // cut off milliseconds from ts\n    ts_end = Math.floor(ts_end); //cur off decimal places\n    \n    topic = months[i];\n\n    msgs.push({topic: topic, payload: { start: ts_start, end: ts_end }});\n    /*\n    if (topic > 52) {\n        topic = 1;\n    }\n    ts += 604800;\n    */\n}\nreturn [msgs];\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "4bb69e31.66269"
+            ]
+        ]
+    },
+    {
+        "id": "d2c46567.1d4768",
+        "type": "inject",
+        "z": "55777aeb.409dac",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "3600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "464186d4.e28bd8"
+            ]
+        ]
+    },
+    {
+        "id": "f673b51f.5ffc2",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "months consumption",
+        "func": "var ts_now = msg.payload;\nvar ts_0 = msg.payload;\n\n\nvar i;\nvar d = new Date(); // localtime\nvar s       = d.getSeconds(); // 0 - 59\nvar m       = d.getMinutes(); // 0 - 59\nvar h       = d.getHours(); // 0 -23\nvar day     = d.getDate(); // Day of week Month\nvar month   = d.getMonth(); // Jan = 0\nvar year    = d.getFullYear(); //2019\n\n\nvar getDaysInMonth = function(month,year) {\n  // Here January is 1 based\n  //Day 0 is the last day in the previous month\n //return new Date(year, month, 0).getDate();\n// Here January is 0 based\n    return new Date(year, month+1, 0).getDate();\n};\n\n\n\n\n\nts_now /= 1000; // cut off milliseconds from ts\nts_now = Math.floor(ts_now); //cut off decimal places\nts_0 /= 1000; // cut off milliseconds from ts\nts_0 = Math.floor(ts_0); //cur off decimal places\n\nfor (i = 0; i != month; i++) {\n  \n  var days_in_month = getDaysInMonth(i, year);\n  ts_0 -= (86400 * days_in_month);\n  \n} \n\nts_0 -= (86400 * day); // minus the actual days\nts_0 -= (3600 * h); // minus the actual hours\nts_0 -= (60 * m);   // minus the actual minutes\nts_0 -= s;         // minus the actual seconds      // minus the actual seconds\n\nmsg = {payload : { start : ts_0, end : ts_now }};\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 400,
+        "wires": [
+            [
+                "b96ec285.f3352",
+                "30c5e545.a996c2",
+                "a411dc33.833dd",
+                "b7c59603.bfde58",
+                "54f86999.9a79e8",
+                "34cdc79e.19cab"
+            ]
+        ]
+    },
+    {
+        "id": "b96ec285.f3352",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "Kosten meter_0 + meter_1",
+        "func": "var price_0 = global.get('price_0');\nvar price_1 = global.get('price_1');\nvar imp_ratio = global.get('imp_per_kwh');\n\nvar factor_0 = price_0 / imp_ratio; // [€/impulse]\nvar factor_1 = price_1 / imp_ratio; // [€/impulse]\n\nmsg.payload =   '\"SELECT SUM(total) FROM (' +\n                ' SELECT SUM(value * ' + factor_0 + ' ) total FROM meter_0 WHERE' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' UNION' +\n                ' SELECT SUM(value * ' + factor_1 + ' ) total FROM meter_1 WHERE ' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' );\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 600,
+        "y": 240,
+        "wires": [
+            [
+                "d50edc57.6823a"
+            ]
+        ]
+    },
+    {
+        "id": "533e6f35.34bda",
+        "type": "inject",
+        "z": "55777aeb.409dac",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "3600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 400,
+        "wires": [
+            [
+                "f673b51f.5ffc2"
+            ]
+        ]
+    },
+    {
+        "id": "d50edc57.6823a",
+        "type": "exec",
+        "z": "55777aeb.409dac",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 860,
+        "y": 240,
+        "wires": [
+            [
+                "3a2758ae.f6807"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3a2758ae.f6807",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "parse float -> €",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1080,
+        "y": 240,
+        "wires": [
+            [
+                "40278167.96ef9"
+            ]
+        ]
+    },
+    {
+        "id": "40278167.96ef9",
+        "type": "ui_text",
+        "z": "55777aeb.409dac",
+        "group": "399d2c00.fc7d9c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Kosten Jahr:",
+        "format": "{{msg.payload}} €",
+        "layout": "row-spread",
+        "x": 1330,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "30c5e545.a996c2",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "Verbrauch meter_0 + meter_1",
+        "func": "var imp_ratio = global.get('imp_per_kwh');\n\nvar factor = 1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(total) FROM (' +\n                ' SELECT SUM(value * ' + factor + ' ) total FROM meter_0 WHERE' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' UNION' +\n                ' SELECT SUM(value * ' + factor + ' ) total FROM meter_1 WHERE ' +\n                ' timestamp BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' );\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 590,
+        "y": 300,
+        "wires": [
+            [
+                "dc426738.89199"
+            ]
+        ]
+    },
+    {
+        "id": "dc426738.89199",
+        "type": "exec",
+        "z": "55777aeb.409dac",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 860,
+        "y": 320,
+        "wires": [
+            [
+                "4fd00ac9.356504"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4fd00ac9.356504",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "parse float -> kWh",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1130,
+        "y": 300,
+        "wires": [
+            [
+                "54d5c51e.a35404"
+            ]
+        ]
+    },
+    {
+        "id": "54d5c51e.a35404",
+        "type": "ui_text",
+        "z": "55777aeb.409dac",
+        "group": "399d2c00.fc7d9c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Verbrauch Jahr:",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-spread",
+        "x": 1340,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "a411dc33.833dd",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "Verbrauch meter_0  ",
+        "func": "var imp_ratio = global.get('imp_per_kwh');\n\nvar factor = 1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(value * ' + factor + ' ) FROM ' +\n                'meter_0 WHERE timestamp ' +\n                'BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' ;\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 610,
+        "y": 400,
+        "wires": [
+            [
+                "7d357072.57faf"
+            ]
+        ]
+    },
+    {
+        "id": "7d357072.57faf",
+        "type": "exec",
+        "z": "55777aeb.409dac",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 860,
+        "y": 400,
+        "wires": [
+            [
+                "92f7746c.cfee38"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b4740dce.754088",
+        "type": "ui_text",
+        "z": "55777aeb.409dac",
+        "group": "399d2c00.fc7d9c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Davon im Tagtarif:",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-spread",
+        "x": 1330,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "92f7746c.cfee38",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "parse float -> kWh",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1090,
+        "y": 380,
+        "wires": [
+            [
+                "b4740dce.754088"
+            ]
+        ]
+    },
+    {
+        "id": "b7c59603.bfde58",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "Verbrauch meter_1",
+        "func": "var imp_ratio = global.get('imp_per_kwh');\n\nvar factor = 1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(value * ' + factor + ' ) FROM ' +\n                'meter_1 WHERE timestamp ' +\n                'BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' ;\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 610,
+        "y": 460,
+        "wires": [
+            [
+                "516c314f.d2f2a"
+            ]
+        ]
+    },
+    {
+        "id": "516c314f.d2f2a",
+        "type": "exec",
+        "z": "55777aeb.409dac",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 860,
+        "y": 460,
+        "wires": [
+            [
+                "de74dce8.e4f0f8"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9a972d5c.d55ea8",
+        "type": "ui_text",
+        "z": "55777aeb.409dac",
+        "group": "399d2c00.fc7d9c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Davon im Nachtarif:",
+        "format": "{{msg.payload}} kWh",
+        "layout": "row-spread",
+        "x": 1340,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "de74dce8.e4f0f8",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "parse float -> kWh",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1090,
+        "y": 440,
+        "wires": [
+            [
+                "9a972d5c.d55ea8"
+            ]
+        ]
+    },
+    {
+        "id": "54f86999.9a79e8",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "Kosten meter_0  ",
+        "func": "var price_0 = global.get('price_0');\nvar imp_ratio = global.get('imp_per_kwh');\n\nvar factor = price_0 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(value * ' + factor + ' ) FROM ' +\n                'meter_0 WHERE timestamp ' +\n                'BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' ;\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 620,
+        "y": 540,
+        "wires": [
+            [
+                "db60fb1b.588d08"
+            ]
+        ]
+    },
+    {
+        "id": "db60fb1b.588d08",
+        "type": "exec",
+        "z": "55777aeb.409dac",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 880,
+        "y": 540,
+        "wires": [
+            [
+                "50434b8d.01eb3c"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "bb4dbd3d.96ab",
+        "type": "ui_text",
+        "z": "55777aeb.409dac",
+        "group": "399d2c00.fc7d9c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Kosten Tagtarif:",
+        "format": "{{msg.payload}} €",
+        "layout": "row-spread",
+        "x": 1360,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "50434b8d.01eb3c",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "parse float -> €",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1120,
+        "y": 540,
+        "wires": [
+            [
+                "bb4dbd3d.96ab"
+            ]
+        ]
+    },
+    {
+        "id": "34cdc79e.19cab",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "Kosten meter_1  ",
+        "func": "var price_1 = global.get('price_1');\nvar imp_ratio = global.get('imp_per_kwh');\n\nvar factor = price_1 / imp_ratio;\n\nmsg.payload =   '\"SELECT SUM(value * ' + factor + ' ) FROM ' +\n                'meter_1 WHERE timestamp ' +\n                'BETWEEN ' + msg.payload.start + ' AND ' + msg.payload.end +\n                ' ;\"';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 640,
+        "y": 600,
+        "wires": [
+            [
+                "f098a132.16ae8"
+            ]
+        ]
+    },
+    {
+        "id": "f098a132.16ae8",
+        "type": "exec",
+        "z": "55777aeb.409dac",
+        "command": " sqlite3 /home/root/e_meter.db ",
+        "addpay": true,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "EXEC SQLITE3",
+        "x": 900,
+        "y": 600,
+        "wires": [
+            [
+                "6b1f3ec1.3b0de"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c549d94e.9f17b",
+        "type": "ui_text",
+        "z": "55777aeb.409dac",
+        "group": "399d2c00.fc7d9c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Kosten Nachttarif:",
+        "format": "{{msg.payload}} €",
+        "layout": "row-spread",
+        "x": 1390,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "6b1f3ec1.3b0de",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "parse float -> €",
+        "func": "var float = parseFloat(msg.payload) || 0.0;\n\nmsg.payload = float.toFixed(2);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1140,
+        "y": 600,
+        "wires": [
+            [
+                "c549d94e.9f17b"
+            ]
+        ]
+    },
+    {
+        "id": "e75c84cd.c09c7",
+        "type": "debug",
+        "z": "55777aeb.409dac",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 790,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "eaa7bba0.58e8b8",
+        "type": "inject",
+        "z": "55777aeb.409dac",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 340,
+        "y": 720,
+        "wires": [
+            [
+                "964b9b82.c564c"
+            ]
+        ]
+    },
+    {
+        "id": "964b9b82.c564c",
+        "type": "function",
+        "z": "55777aeb.409dac",
+        "name": "",
+        "func": "Date.prototype.getWeek = function() {\n  var date = new Date(this.getTime());\n  date.setHours(0, 0, 0, 0);\n  // Thursday in current week decides the year.\n  date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);\n  // January 4 is always in week 1.\n  var week1 = new Date(date.getFullYear(), 0, 4);\n  // Adjust to Thursday in week 1 and count number of weeks from date to week1.\n  return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7);\n}\n\nvar d = new Date(); // localtime\nvar week = d.getWeek();\n\nmsg.payload = week;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 720,
+        "wires": [
+            [
+                "e75c84cd.c09c7"
+            ]
+        ]
+    },
+    {
+        "id": "9b6048a9.3de88",
+        "type": "ui_chart",
+        "z": "55777aeb.409dac",
+        "name": "",
+        "group": "7bfa3904.7a3c8",
+        "order": 0,
+        "width": "20",
+        "height": "11",
+        "label": "Jahresübersicht [€]",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "x": 1410,
+        "y": 140,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "895a68df.2fbe28",
+        "type": "file in",
+        "z": "83df7998.8bd9f",
+        "name": "",
+        "filename": "/home/root/e_meter_0.txt",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "x": 470,
+        "y": 160,
+        "wires": [
+            [
+                "f9747df6.4f88f8"
+            ]
+        ]
+    },
+    {
+        "id": "50fc0003.fd5758",
+        "type": "inject",
+        "z": "83df7998.8bd9f",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 220,
+        "y": 160,
+        "wires": [
+            [
+                "895a68df.2fbe28"
+            ]
+        ]
+    },
+    {
+        "id": "f66c6a4d.d1dd98",
+        "type": "debug",
+        "z": "83df7998.8bd9f",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1210,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "f9747df6.4f88f8",
+        "type": "function",
+        "z": "83df7998.8bd9f",
+        "name": "",
+        "func": "Date.prototype.getWeek = function() {\n  var date = new Date(this.getTime());\n  date.setHours(0, 0, 0, 0);\n  // Thursday in current week decides the year.\n  date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);\n  // January 4 is always in week 1.\n  var week1 = new Date(date.getFullYear(), 0, 4);\n  // Adjust to Thursday in week 1 and count number of weeks from date to week1.\n  return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7);\n}\nvar now = new Date();\nvar imp_ratio = global.get('imp_per_kwh');\nvar value = parseFloat(msg.payload) || 0.0;\nvar csv_string = \"\";\nvar ts = now.getTime();\n\nts /= 1000;\nts = Math.floor(ts); //cur off decimal places\n\nvalue /= imp_ratio;\nvalue = value.toFixed(2);\n\ncsv_string += ts;\ncsv_string += ';';\ncsv_string += value;\ncsv_string += ';';\ncsv_string += 'kWh';\n\nmsg.payload = { timestamp : ts,\n                value : value,\n                unit : \"kWh\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 750,
+        "y": 160,
+        "wires": [
+            [
+                "ada677f8.6e176",
+                "3435456.e607eba"
+            ]
+        ]
+    },
+    {
+        "id": "ada677f8.6e176",
+        "type": "csv",
+        "z": "83df7998.8bd9f",
+        "name": "",
+        "sep": ";",
+        "hdrin": "",
+        "hdrout": "",
+        "multi": "one",
+        "ret": "\\r\\n",
+        "temp": "timestamp,value,unit",
+        "skip": "0",
+        "x": 950,
+        "y": 180,
+        "wires": [
+            [
+                "1ad0f710.7e0be9",
+                "f66c6a4d.d1dd98"
+            ]
+        ]
+    },
+    {
+        "id": "1ad0f710.7e0be9",
+        "type": "file",
+        "z": "83df7998.8bd9f",
+        "name": "",
+        "filename": "/home/root/testfile.csv",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "false",
+        "x": 1160,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3435456.e607eba",
+        "type": "debug",
+        "z": "83df7998.8bd9f",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 940,
+        "y": 100,
+        "wires": []
+    }
+]
