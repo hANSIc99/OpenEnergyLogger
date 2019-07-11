@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+environment/project/com.siemens.cdt.iot2000.toolchain.configuration.release.1745752533/PATH/delimiter=;
+environment/project/com.siemens.cdt.iot2000.toolchain.configuration.release.1745752533/PATH/operation=append
+environment/project/com.siemens.cdt.iot2000.toolchain.configuration.release.1745752533/PATH/value=D\:\\Stephan\\Downloads\\IOT2000_SDK_Windows_V2.2.0\\V2.2.0_SDK_Windows.tar\\V2.2.0_SDK_Windows/sysroots/i686-pokysdk-mingw32/usr/bin/i586-poky-linux
+environment/project/com.siemens.cdt.iot2000.toolchain.configuration.release.1745752533/POKY_HOME/delimiter=;
+environment/project/com.siemens.cdt.iot2000.toolchain.configuration.release.1745752533/POKY_HOME/operation=append
+environment/project/com.siemens.cdt.iot2000.toolchain.configuration.release.1745752533/POKY_HOME/value=D\:\\Stephan\\Downloads\\IOT2000_SDK_Windows_V2.2.0\\V2.2.0_SDK_Windows.tar\\V2.2.0_SDK_Windows/sysroots/i586-nlp-32-poky-linux
+environment/project/com.siemens.cdt.iot2000.toolchain.configuration.release.1745752533/append=true
+environment/project/com.siemens.cdt.iot2000.toolchain.configuration.release.1745752533/appendContributed=true
